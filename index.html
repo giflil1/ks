@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+<body>
+
+<div class="col-12 my-5 d1" align="center">
+	<img src="door.png" class="w-25 d11">
+	<img src="door2.png" class="ml-3 d12">
+	<img src="door3.png" class=" ml-3 d13">
+</div>
+
+<div class="col-12 d2" style="display: none">
+	<div class=" col-12" style="background-image: url(bg.jpg); height: 800px; background-size: 100% 100%; ">
+		<h3 style="color: white">надо найти плащ, палочку, метлу.  </h3>
+		<div class="row">
+			<h3 style="color: white">Баллы:</h3>
+			<h3 style="color: white" class="d21 score-text">0</h3>
+		</div>
+		<button type="button" class="btn btn-success but">выйти из игры</button>
+		<div class="row">
+			<div>
+				<img src="gun.png" style="width: 100px; position: absolute; left: 300px; bottom: 200px;" class=" d211">
+			</div>
+			<div>
+				<img src="metla.png" style="top:45px;width: 100px; position: absolute; right: 100px; bottom: 100px;" class=" d22">
+			</div>
+			<div>
+				<img src="mantiya.png" style=" width: 100px; position: absolute; left: 400px; top: 300;" class="d23">
+			</div>
+			<div>
+				<img src="palochka.png" style=" width: 100px; position: absolute; bottom: 500px; left: 100px;" class="d24">
+			</div>
+			<div>
+				<img src="ring.png" style=" width: 90px;position: absolute; left: 1000px; bottom: 150px" class= "d25">
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	
+	let score = 0
+
+	document.querySelector(".d11").onclick = function(){
+	alert("добро пожаловать в хогвартс");
+	document.querySelector(".d1").style.display = "none"
+	document.querySelector(".d2").style.display = "block"
+}
+	document.querySelector(".d211").onclick = function (){
+	alert("не")
+}
+
+	document.querySelector(".d22").onclick = function (){
+	document.querySelector(".d22").style.display = "none"
+	document.querySelector(".score-text").innerHTML = score = score + 1
+}
+
+	document.querySelector(".d23").onclick = function (){
+	document.querySelector(".d23").style.display = "none"
+	document.querySelector(".score-text").innerHTML = score = score + 1
+}
+
+
+	document.querySelector(".d24").onclick = function (){
+	document.querySelector(".d24").style.display = "none"
+	document.querySelector(".score-text").innerHTML = score = score + 1
+}
+
+	document.querySelector(".d25").onclick = function (){
+	alert("не")
+}
+
+	document.querySelector(".but").onclick = function (){
+	document.querySelector(".d2").style.display = "none"
+	document.querySelector(".d1").style.display = "block"
+}
+</script>
+</body>
+</html>
